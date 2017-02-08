@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Five Chess Go</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"
+    </head>
+    <body>
+        <div id="Score" style="clear:both;text-align:center;">
+            <h1>Score</h1>
+            Player:<i id="scoreA">0</i>  &nbsp;&nbsp;&nbsp;AI:<i id="scoreB">0</i><br><br>
+            <button id="restart" type="button">Restart the game</button>
+        </div>
+        
+        
+        <div id="mainId"><canvas id="chess" width="450px" height="450px"></canvas></div>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        
+        <script type="text/javascript" src="js/script.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCLQ0fyp9i5nngn17FSnucjgKtat-elhxY",
+            authDomain: "fivechessgo.firebaseapp.com",
+            databaseURL: "https://fivechessgo.firebaseio.com",
+            storageBucket: "fivechessgo.appspot.com",
+            messagingSenderId: "901670774152"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+    </body>
+</html> 
